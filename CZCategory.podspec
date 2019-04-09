@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/JuYiWei/CZCategory.git", :tag => "#{s.version}" }
 
 
-  s.source_files  = "CZCategory/CZCategory/Category/*.{h,m}"
+  # s.source_files  = "CZCategory/CZCategory/Category/*.{h,m}"
   s.subspec 'UIKit' do |ss1|
     ss1.source_files  = "CZCategory/CZCategory/Category/UIKit/*.{h,m}"
   end
