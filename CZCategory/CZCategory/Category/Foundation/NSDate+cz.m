@@ -10,6 +10,7 @@
 
 @implementation NSDate (cz)
 
+/** 间隔天数 */
 - (NSInteger)cz_dayPaddingFromStartDate:(NSDate *)start {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [calendar components:NSCalendarUnitDay fromDate:start toDate:self options:0];

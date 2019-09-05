@@ -12,6 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSArray (cz)
 
+/** NSArray -> Json 字符串 压缩 */
+- (NSString *)cz_jsonString;
+
+/** NSArray -> Json 字符串 可读 */
+- (NSString *)cz_jsonStringPrettyPrinted;
+
 @end
 
 NS_ASSUME_NONNULL_END

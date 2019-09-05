@@ -12,12 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSDate (cz)
 
-/**
- 间隔天数
-
- @param start 开始时间
- @return 返回天数，不算 2 头
- */
+/** 间隔天数 */
 - (NSInteger)cz_dayPaddingFromStartDate:(NSDate *)start;
 
 @end

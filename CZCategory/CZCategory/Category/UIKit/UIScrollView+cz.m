@@ -10,6 +10,7 @@
 
 @implementation UIScrollView (cz)
 
+/** scrollerView 生成长图 */
 - (UIImage *)cz_scrollerViewCapture {
     UIImage* image = nil;
     UIGraphicsBeginImageContext(self.contentSize);

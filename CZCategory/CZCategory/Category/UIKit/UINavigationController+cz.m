@@ -10,6 +10,7 @@
 
 @implementation UINavigationController (cz)
 
+/** 修改背景透明度 */
 - (void)cz_changeNavAlpha:(CGFloat)alpha {
     NSArray *navBarSubViews = self.navigationBar.subviews;
     [navBarSubViews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -25,6 +26,7 @@
     }];
 }
 
+/** 修改标题透明度 */
 - (void)cz_changeNavTitleAlpha:(CGFloat)alpha {
     NSArray *navBarSubViews = self.navigationBar.subviews;
     [navBarSubViews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -40,6 +42,7 @@
     }];
 }
 
+/** 修改大标题透明度 */
 - (void)cz_changeNavLargeTitleAlpha:(CGFloat)alpha {
     NSArray *navBarSubViews = self.navigationBar.subviews;
     [navBarSubViews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -55,6 +58,7 @@
     }];
 }
 
+/** 是否隐藏底部的横线 */
 - (void)cz_changeNavBottomLineHidden:(BOOL)hidden {
     NSArray *navBarSubViews = self.navigationBar.subviews;
     [navBarSubViews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL * _Nonnull stop) {

@@ -6,3 +6,6 @@
 
 pod spec lint CZCategory.podspec --use-libraries --allow-warnings --verbose
 pod trunk push CZCategory.podspec --use-libraries --allow-warnings --verbose
+
+
+pod search CZCategory--simple

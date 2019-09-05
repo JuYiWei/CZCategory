@@ -10,6 +10,7 @@
 
 @implementation UIView (cz)
 
+/** view 生成图片 */
 - (UIImage *)cz_viewCapture {
     UIImage* image = nil;
     UIGraphicsBeginImageContext(self.bounds.size);

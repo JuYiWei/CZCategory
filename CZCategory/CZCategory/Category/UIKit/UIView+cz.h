@@ -10,11 +10,7 @@
 
 @interface UIView (cz)
 
-/**
- view 生成图片
-
- @return image
- */
+/** view 生成图片 */
 - (UIImage *)cz_viewCapture;
 
 @end

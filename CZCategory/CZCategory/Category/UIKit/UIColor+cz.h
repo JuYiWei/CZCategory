@@ -27,52 +27,26 @@ typedef NS_ENUM(NSInteger, CZGradientColorDirection) {
 
 #pragma mark - 类方法
 
-/**
- 16进制值 转颜色
-
- @param hexValue 16进制值
- @return color
- */
+/** Hex 数值 转 颜色 */
 + (UIColor *)cz_hexValueColor:(NSInteger)hexValue;
 
-/**
- 16进制值 转颜色
- 
- @param hexValue 16进制值
- @param alpha 透明度
- @return color
- */
+/** Hex 数值 转 颜色，带透明度 */
 + (UIColor *)cz_hexValueColor:(NSInteger)hexValue alpha:(CGFloat)alpha;
 
-/**
- 16进制字符串 转颜色
- 
- @param hexString 16进制字符串
- @return color
- */
+/** Hex 字符串 转 颜色 */
 + (UIColor *)cz_hexColor:(NSString *)hexString;
 
-/**
- 16进制字符串 转颜色
- 
- @param hexString 16进制字符串
- @return color
- */
+/** Hex 字符串 转 颜色，带透明度 */
 + (UIColor *)cz_hexColor:(NSString *)hexString alpha:(CGFloat)alpha;
 
-/**
- 线性渐变，均匀变化
-
- @param colors 颜色数组
- @param size 大小
- @param direction 方向
- @return color
- */
-+ (UIColor *)cz_gradientColoes:(NSArray <UIColor *>*)colors withSize:(CGSize)size direction:(CZGradientColorDirection)direction;
+/** 线性渐变 */
++ (UIColor *)cz_gradientColoes:(NSArray <UIColor *>*)colors
+                      withSize:(CGSize)size
+                     direction:(CZGradientColorDirection)direction;
 
 #pragma mark - 实例方法
-
-/*! 已有颜色 添加透明度 */
-- (UIColor *)cz_addAlpha:(CGFloat)alpha;
+   
+/** 现有颜色对象，修改透明度 */
+   - (UIColor *)cz_addAlpha:(CGFloat)alpha;
 
 @end

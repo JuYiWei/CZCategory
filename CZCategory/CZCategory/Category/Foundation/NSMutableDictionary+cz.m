@@ -11,8 +11,9 @@
 
 @implementation NSMutableDictionary (cz)
 
+/** 添加 非空对象 */
 - (void)cz_addUnEmptyObj:(id)obj forKey:(NSString *)key {
-    if (CZObjectIsEmpty(obj)) {
+    if (CZ_IS_OBJECT_NULL(obj)) {
 #if DEBUG
         NSLog(@"对象不存在：%@", key);
 #endif
@@ -21,6 +22,7 @@
     }
 }
 
+/** 添加 非空字符串，主要用于接口参数上传 */
 - (void)cz_addUnEmptyString:(id)obj forKey:(NSString *)key {
     if ([obj isKindOfClass:[NSString class]]) {
         [self setObject:obj forKey:key];

@@ -10,11 +10,7 @@
 
 @interface UIWindow (cz)
 
-/**
- 获取顶层的 window
- 
- @return window
- */
+/** 获取顶层的 window */
 + (UIWindow *)cz_frontWindow;
 
 @end

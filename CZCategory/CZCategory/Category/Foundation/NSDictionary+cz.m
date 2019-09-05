@@ -8,51 +8,22 @@
 //
 
 #import "NSDictionary+cz.h"
-#import "NSArray+cz.h"
+#import "NSObject+cz.h"
 
 @implementation NSDictionary (cz)
 
-#if DEBUG
-
-- (NSString *)cz_formatterDescription {
-    __block NSMutableString *jsonString = [NSMutableString string];
-    [jsonString appendString:@"{"];
-    [self enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        NSString *temp;
-        if ([obj isKindOfClass:[NSArray class]] || [obj isKindOfClass:[NSDictionary class]]) {
-            temp = [NSString stringWithFormat:@"\"%@\":%@,", key, obj];
-        } else {
-            temp = [NSString stringWithFormat:@"\"%@\":\"%@\",", key, obj];
-        }
-        [jsonString appendString:temp];
-    }];
-    [jsonString deleteCharactersInRange:NSMakeRange(jsonString.length-1, 1)];
-    [jsonString appendString:@"}"];
-    
-    return jsonString;
+/** NSDictionary -> Json 字符串 压缩 */
+- (NSString *)cz_jsonString {
+    NSData *data = [self cz_jsonData];
+    NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return string;
 }
 
-- (NSString *)debugDescription {
-    return [self cz_formatterDescription];
+/** NSDictionary -> Json 字符串 可读 */
+- (NSString *)cz_jsonStringPrettyPrinted {
+    NSData *data = [self cz_jsonDataPrettyPrinted];
+    NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return string;
 }
-
-- (NSString *)descriptionWithLocale:(id)locale {
-    return [self cz_formatterDescription];
-}
-
-- (NSString *)description {
-    return [self cz_formatterDescription];
-}
-
-- (NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level {
-    return [self cz_formatterDescription];
-}
-
-- (NSString *)descriptionInStringsFileFormat {
-    return [self cz_formatterDescription];
-}
-
-#endif
-
 
 @end

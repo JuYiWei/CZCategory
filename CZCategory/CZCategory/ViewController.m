@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "Category/UIKit/CZUIKitHeader.h"
 
 @interface ViewController ()
+
+@property (strong, nonatomic) IBOutlet UILabel *label;
 
 @end
 
@@ -16,7 +19,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+
+
+    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    
+    NSLog(@"123 %@", [UIDevice cz_deviceInfo]);
+    
+
 }
 
 

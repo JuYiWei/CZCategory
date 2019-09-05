@@ -10,6 +10,7 @@
 
 @implementation UIWindow (cz)
 
+/** 获取顶层的 window */
 + (UIWindow *)cz_frontWindow {
     NSEnumerator *frontToBackWindows = [UIApplication.sharedApplication.windows reverseObjectEnumerator];
     for (UIWindow *window in frontToBackWindows) {
@@ -24,6 +25,5 @@
     }
     return nil;
 }
-
 
 @end

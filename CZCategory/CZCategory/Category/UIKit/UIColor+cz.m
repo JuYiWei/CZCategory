@@ -12,10 +12,12 @@
 
 #pragma mark - 类方法
 
+/** Hex 数值 转 颜色 */
 + (UIColor *)cz_hexValueColor:(NSInteger)hexValue {
     return [UIColor cz_hexValueColor:hexValue alpha:1.];
 }
 
+/** Hex 数值 转 颜色，带透明度 */
 + (UIColor *)cz_hexValueColor:(NSInteger)hexValue alpha:(CGFloat)alpha {
     CGFloat r = ((hexValue & 0xFF0000) >> 16)/255.0;
     CGFloat g = ((hexValue & 0xFF00) >> 8)/255.0;
@@ -23,10 +25,12 @@
     return [UIColor colorWithRed:r green:g blue:b alpha:alpha];
 }
 
+/** Hex 字符串 转 颜色 */
 + (UIColor *)cz_hexColor:(NSString *)hexString {
     return [UIColor cz_hexColor:hexString alpha:1.];
 }
 
+/** Hex 字符串 转 颜色，带透明度 */
 + (UIColor *)cz_hexColor:(NSString *)hexString alpha:(CGFloat)alpha {
     if (hexString.length != 6) {
         return [UIColor blackColor];
@@ -49,6 +53,7 @@
     return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:alpha];
 }
 
+/** 线性渐变 */
 + (UIColor *)cz_gradientColoes:(NSArray <UIColor *>*)colors withSize:(CGSize)size direction:(CZGradientColorDirection)direction {
     if (colors.count < 2) {
         return [UIColor blackColor];
@@ -98,6 +103,7 @@
 
 #pragma mark - 实例方法
 
+/** 现有颜色对象，修改透明度 */
 - (UIColor *)cz_addAlpha:(CGFloat)alpha {
     CGFloat r,g,b,a;
     BOOL res = [self getRed:&r green:&g blue:&b alpha:&a];
