@@ -33,6 +33,7 @@
 		844243CA225C400400EB432E /* UIFont+cz.m in Sources */ = {isa = PBXBuildFile; fileRef = 844243B9225C400400EB432E /* UIFont+cz.m */; };
 		849712492321084B00C6DD28 /* NSMutableArray+cz.m in Sources */ = {isa = PBXBuildFile; fileRef = 849712482321084B00C6DD28 /* NSMutableArray+cz.m */; };
 		8497124C2321101900C6DD28 /* NSNumber+cz.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497124B2321101900C6DD28 /* NSNumber+cz.m */; };
+		84C2D91023226B5300796E72 /* UIScreen+cz.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2D90F23226B5300796E72 /* UIScreen+cz.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,8 @@
 		849712482321084B00C6DD28 /* NSMutableArray+cz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+cz.m"; sourceTree = "<group>"; };
 		8497124A2321101900C6DD28 /* NSNumber+cz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+cz.h"; sourceTree = "<group>"; };
 		8497124B2321101900C6DD28 /* NSNumber+cz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+cz.m"; sourceTree = "<group>"; };
+		84C2D90E23226B5300796E72 /* UIScreen+cz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScreen+cz.h"; sourceTree = "<group>"; };
+		84C2D90F23226B5300796E72 /* UIScreen+cz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+cz.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +249,8 @@
 				844243B5225C400400EB432E /* UIView+cz.m */,
 				844243B2225C400400EB432E /* UIWindow+cz.h */,
 				844243B7225C400400EB432E /* UIWindow+cz.m */,
+				84C2D90E23226B5300796E72 /* UIScreen+cz.h */,
+				84C2D90F23226B5300796E72 /* UIScreen+cz.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -396,6 +401,7 @@
 				844243C3225C400400EB432E /* NSMutableDictionary+cz.m in Sources */,
 				844243C6225C400400EB432E /* UIView+cz.m in Sources */,
 				844243C1225C400400EB432E /* NSObject+cz.m in Sources */,
+				84C2D91023226B5300796E72 /* UIScreen+cz.m in Sources */,
 				844243BE225C400400EB432E /* NSDate+cz.m in Sources */,
 				8407B921231F55E5008B19E9 /* NSBundle+cz.m in Sources */,
 				8442437D225C38B000EB432E /* main.m in Sources */,
