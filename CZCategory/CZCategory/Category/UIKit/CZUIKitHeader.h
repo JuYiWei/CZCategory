@@ -14,6 +14,7 @@
 #import "UIFont+cz.h"
 #import "UIImage+cz.h"
 #import "UINavigationController+cz.h"
+#import "UIScreen+cz.h"
 #import "UIScrollView+cz.h"
 #import "UIView+cz.h"
 #import "UIWindow+cz.h"

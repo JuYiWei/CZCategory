@@ -12,6 +12,22 @@
 
 #pragma mark - 类方法
 
+/** 通用读取文件图片 */
++ (UIImage *)cz_imageFromBundle:(NSBundle *)bundle name:(NSString *)name type:(NSString *)type {
+    NSString *imgPath = [bundle pathForResource:name ofType:type];
+    return [UIImage imageWithContentsOfFile:imgPath];
+}
+
+/** 主包 读取文件图片 */
++ (UIImage *)cz_imageFromMainBundleWithName:(NSString *)name type:(NSString *)type {
+    return [UIImage cz_imageFromBundle:[NSBundle mainBundle] name:name type:type];
+}
+
+/** 主包 读取 png 文件图片 */
++ (UIImage *)cz_imageFromMainBundleWithPNGName:(NSString *)name {
+    return [UIImage cz_imageFromMainBundleWithName:name type:@"png"];
+}
+
 /** 颜色生成图片，指定尺寸 */
 + (UIImage *)cz_imageFromColor:(UIColor *)color size:(CGSize)size {
     CGFloat width = size.width < 1 ? 1 : size.width;

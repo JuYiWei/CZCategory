@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-#define CZFont(value)           [UIFont systemFontOfSize:value]
-#define CZFontBold(value)       [UIFont boldSystemFontOfSize:value]
-#define CZFontName(name, value) [UIFont fontWithName:name size:value]
+#define CZ_FONT(value)           [UIFont systemFontOfSize:value]
+#define CZ_FONT_BOLD(value)       [UIFont boldSystemFontOfSize:value]
+#define CZ_FONT_NAME(name, value) [UIFont fontWithName:name size:value]
 
 @interface UIFont (cz)
 

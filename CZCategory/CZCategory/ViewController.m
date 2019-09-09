@@ -12,6 +12,7 @@
 @interface ViewController ()
 
 @property (strong, nonatomic) IBOutlet UILabel *label;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -21,6 +22,8 @@
     [super viewDidLoad];
 
 
+    NSString *imgPath = [[NSBundle mainBundle] pathForResource:@"testx" ofType:@"png"];
+    self.imageView.image = [UIImage imageWithContentsOfFile:imgPath];
 
     
 }

@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-#define CZImage(name) [UIImage imageNamed:name]
+#define CZ_IMAGE(name) [UIImage imageNamed:name]
+#define CZ_IMAGE_FILE(name) [UIImage cz_imageFromMainBundleWithPNGName:name]
 
 /** 生成二维码质量： L: 7% M: 15% Q: 25% H: 30% */
 typedef NS_ENUM(NSInteger, CZImageQRQuility) {
@@ -21,6 +22,15 @@ typedef NS_ENUM(NSInteger, CZImageQRQuility) {
 @interface UIImage (cz)
 
 #pragma mark - 类方法
+
+/** 通用读取文件图片 */
++ (UIImage *)cz_imageFromBundle:(NSBundle *)bundle name:(NSString *)name type:(NSString *)type;
+
+/** 主包 读取文件图片 */
++ (UIImage *)cz_imageFromMainBundleWithName:(NSString *)name type:(NSString *)type;
+
+/** 主包 读取 png 文件图片 */
++ (UIImage *)cz_imageFromMainBundleWithPNGName:(NSString *)name;
 
 /** 颜色生成图片，指定尺寸 */
 + (UIImage *)cz_imageFromColor:(UIColor *)color size:(CGSize)size;
