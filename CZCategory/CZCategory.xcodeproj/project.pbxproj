@@ -31,6 +31,9 @@
 		844243C8225C400400EB432E /* UIWindow+cz.m in Sources */ = {isa = PBXBuildFile; fileRef = 844243B7225C400400EB432E /* UIWindow+cz.m */; };
 		844243C9225C400400EB432E /* UIColor+cz.m in Sources */ = {isa = PBXBuildFile; fileRef = 844243B8225C400400EB432E /* UIColor+cz.m */; };
 		844243CA225C400400EB432E /* UIFont+cz.m in Sources */ = {isa = PBXBuildFile; fileRef = 844243B9225C400400EB432E /* UIFont+cz.m */; };
+		8465B776233240CC007BBE50 /* UIButton+cz.m in Sources */ = {isa = PBXBuildFile; fileRef = 8465B775233240CC007BBE50 /* UIButton+cz.m */; };
+		8465B77923324531007BBE50 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465B77723324531007BBE50 /* test.png */; };
+		8465B77A23324531007BBE50 /* testx.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465B77823324531007BBE50 /* testx.png */; };
 		849712492321084B00C6DD28 /* NSMutableArray+cz.m in Sources */ = {isa = PBXBuildFile; fileRef = 849712482321084B00C6DD28 /* NSMutableArray+cz.m */; };
 		8497124C2321101900C6DD28 /* NSNumber+cz.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497124B2321101900C6DD28 /* NSNumber+cz.m */; };
 		84C2D91023226B5300796E72 /* UIScreen+cz.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2D90F23226B5300796E72 /* UIScreen+cz.m */; };
@@ -110,6 +113,10 @@
 		844243BD225C400400EB432E /* UIView+cz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+cz.h"; sourceTree = "<group>"; };
 		844243CB225C439500EB432E /* CZFoundationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZFoundationHeader.h; sourceTree = "<group>"; };
 		844243CC225C439F00EB432E /* CZUIKitHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZUIKitHeader.h; sourceTree = "<group>"; };
+		8465B774233240CC007BBE50 /* UIButton+cz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+cz.h"; sourceTree = "<group>"; };
+		8465B775233240CC007BBE50 /* UIButton+cz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+cz.m"; sourceTree = "<group>"; };
+		8465B77723324531007BBE50 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		8465B77823324531007BBE50 /* testx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testx.png; sourceTree = "<group>"; };
 		849712472321084B00C6DD28 /* NSMutableArray+cz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+cz.h"; sourceTree = "<group>"; };
 		849712482321084B00C6DD28 /* NSMutableArray+cz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+cz.m"; sourceTree = "<group>"; };
 		8497124A2321101900C6DD28 /* NSNumber+cz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+cz.h"; sourceTree = "<group>"; };
@@ -176,6 +183,8 @@
 				8442439F225C38DD00EB432E /* Category */,
 				8442436D225C38AF00EB432E /* AppDelegate.h */,
 				8442436E225C38AF00EB432E /* AppDelegate.m */,
+				8465B77723324531007BBE50 /* test.png */,
+				8465B77823324531007BBE50 /* testx.png */,
 				84424370225C38AF00EB432E /* ViewController.h */,
 				84424371225C38AF00EB432E /* ViewController.m */,
 				84424373225C38AF00EB432E /* Main.storyboard */,
@@ -264,6 +273,8 @@
 				844243B5225C400400EB432E /* UIView+cz.m */,
 				844243B2225C400400EB432E /* UIWindow+cz.h */,
 				844243B7225C400400EB432E /* UIWindow+cz.m */,
+				8465B774233240CC007BBE50 /* UIButton+cz.h */,
+				8465B775233240CC007BBE50 /* UIButton+cz.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -385,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C2D9322325E98000796E72 /* test@2x.png in Resources */,
+				8465B77923324531007BBE50 /* test.png in Resources */,
 				84C2D9372325EC8500796E72 /* testx@2x.png in Resources */,
 				8442437A225C38B000EB432E /* LaunchScreen.storyboard in Resources */,
 				84C2D9382325EC8500796E72 /* testx@3x.png in Resources */,
@@ -393,6 +405,7 @@
 				84C2D9302325E98000796E72 /* test@3x.png in Resources */,
 				84424377225C38B000EB432E /* Assets.xcassets in Resources */,
 				84424375225C38AF00EB432E /* Main.storyboard in Resources */,
+				8465B77A23324531007BBE50 /* testx.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +450,7 @@
 				844243BE225C400400EB432E /* NSDate+cz.m in Sources */,
 				8407B921231F55E5008B19E9 /* NSBundle+cz.m in Sources */,
 				8442437D225C38B000EB432E /* main.m in Sources */,
+				8465B776233240CC007BBE50 /* UIButton+cz.m in Sources */,
 				8442436F225C38AF00EB432E /* AppDelegate.m in Sources */,
 				8407B924231F8DC6008B19E9 /* NSData+cz.m in Sources */,
 			);

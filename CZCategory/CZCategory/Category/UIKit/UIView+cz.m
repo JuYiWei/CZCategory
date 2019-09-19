@@ -10,6 +10,36 @@
 
 @implementation UIView (cz)
 
+/** min x */
+- (CGFloat)cz_minX {
+    return CGRectGetMinX(self.frame);
+}
+
+/** max x */
+- (CGFloat)cz_maxX {
+    return CGRectGetMaxX(self.frame);
+}
+
+/** min y */
+- (CGFloat)cz_minY {
+    return CGRectGetMinY(self.frame);
+}
+
+/** max y */
+- (CGFloat)cz_maxY {
+    return CGRectGetMaxY(self.frame);
+}
+
+/** width */
+- (CGFloat)cz_width {
+    return CGRectGetWidth(self.frame);
+}
+
+/** height */
+- (CGFloat)cz_height {
+    return CGRectGetHeight(self.frame);
+}
+
 /** view 生成图片 */
 - (UIImage *)cz_viewCapture {
     UIImage* image = nil;

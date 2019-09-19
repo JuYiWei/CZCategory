@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define CZ_IMAGE(name) [UIImage imageNamed:name]
+#define CZ_IMAGE_NAME(name) [UIImage imageNamed:name]
 #define CZ_IMAGE_FILE(name) [UIImage cz_imageFromMainBundleWithPNGName:name]
 
 /** 生成二维码质量： L: 7% M: 15% Q: 25% H: 30% */

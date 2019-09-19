@@ -10,6 +10,24 @@
 
 @interface UIView (cz)
 
+/** min x */
+- (CGFloat)cz_minX;
+
+/** max x */
+- (CGFloat)cz_maxX;
+
+/** min y */
+- (CGFloat)cz_minY;
+
+/** max y */
+- (CGFloat)cz_maxY;
+
+/** width */
+- (CGFloat)cz_width;
+
+/** height */
+- (CGFloat)cz_height;
+
 /** view 生成图片 */
 - (UIImage *)cz_viewCapture;
 

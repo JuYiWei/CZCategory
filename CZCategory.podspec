@@ -2,9 +2,9 @@
 Pod::Spec.new do |s|
 
   s.name         = "CZCategory"
-  s.version      = "0.0.5"
-  s.summary      = "cz self Category summary"
-  s.description  = "cz self Category description"
+  s.version      = "0.0.6"
+  s.summary      = "cz self Category"
+  s.description  = "fix macro;new function"
   s.homepage     = "https://github.com/JuYiWei/CZCategory"
   s.license      = "MIT"
   s.author       = { "juyw" => "757832801@qq.com" }
