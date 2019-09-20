@@ -31,9 +31,30 @@
     CGFloat maxY = CGRectGetMaxY(self.button.frame);
     
     
+    if (CZ_SCREEN_PHONE_MAX_1242x2688) {
+        NSLog(@"max");
+    }
+    if (CZ_SCREEN_PHONE_XR_828x1792) {
+        NSLog(@"xr");
+    }
+    if (CZ_SCREEN_PHONE_X_1125x2436) {
+        NSLog(@"x");
+    }
+    if (CZ_SCREEN_PHONE_PLUS_1242x2208) {
+        NSLog(@"plus");
+    }
+    if (CZ_SCREEN_PHONE_6_750x1334) {
+        NSLog(@"6");
+    }
+    if (CZ_SCREEN_PHONE_5_640x1136) {
+        NSLog(@"5");
+    }
+    if (CZ_SCREEN_PHONE_4_640x960) {
+        NSLog(@"4");
+    }
     
     
-    [self initUI];
+//    [self initUI];
 }
 
 

@@ -13,6 +13,8 @@
 #define CZ_SCREEN_HEIGHT    ([UIScreen mainScreen].bounds.size.height)
 #define CZ_SCREEN_SCALE     ([UIScreen mainScreen].scale)
 #define CZ_SCREEN_ONE_PIXEL (1/CZ_SCREEN_SCALE)
+#define CZ_SCREEN_SPECIAL   (CZ_SCREEN_PHONE_MAX_1242x2688 || CZ_SCREEN_PHONE_X_1125x2436 || CZ_SCREEN_PHONE_XR_828x1792)
+
 
 // 屏幕区分 iPhone
 #define CZ_SCREEN_PHONE_MAX_1242x2688           ([[UIScreen mainScreen] respondsToSelector:@selector(currentMode)] ? CGSizeEqualToSize([UIScreen mainScreen].currentMode.size, CGSizeMake(1242, 2688)) : NO)

@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CZCategory"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "cz self Category"
   s.description  = "fix macro;new function"
   s.homepage     = "https://github.com/JuYiWei/CZCategory"
